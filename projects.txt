@@ -1,0 +1,36 @@
+select count(station_id) group_by(station_id) order by desc limit 10
+
+
+select sum(start_ts-end_ts) group by user_id
+
+
+select count(likes) group by (artist) order by desc limit 10
+
+
+select _c1 where song_end_type=0 or like =1 
+group by _c1 order by desc limit 10
+
+
+select a.uid,(a.end_ts-a.start_ts) as duration from alldata a left outer join usrsbn u 
+on a.uid=u.uid order by duration desc limit 10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
